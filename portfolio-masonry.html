@@ -1,0 +1,294 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Portfolio - Master Project</title>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600&display=swap" rel="stylesheet">
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    body {
+      font-family: 'Poppins', sans-serif;
+      background-color: #f4f7fa;
+      color: #333;
+      line-height: 1.6;
+    }
+
+    .container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    /* Header */
+    header {
+      background: linear-gradient(135deg, #2c3e50, #3498db);
+      color: #fff;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    header h1 {
+      font-size: 1.8rem;
+      font-weight: 600;
+      text-transform: uppercase;
+    }
+
+    nav ul {
+      list-style: none;
+      display: flex;
+      gap: 20px;
+    }
+
+    nav ul li a {
+      color: #fff;
+      text-decoration: none;
+      font-weight: 400;
+      transition: color 0.3s ease;
+    }
+
+    nav ul li a:hover {
+      color: #e74c3c;
+    }
+
+    /* Main Content */
+    .main-content {
+      padding: 40px 0;
+    }
+
+    .project-header {
+      text-align: center;
+      margin-bottom: 40px;
+    }
+
+    .project-header h2 {
+      font-size: 2.5rem;
+      color: #e74c3c;
+      margin-bottom: 10px;
+    }
+
+    .project-header p {
+      font-size: 1.2rem;
+      color: #7f8c8d;
+    }
+
+    .project-details {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .project-details h3 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 15px;
+    }
+
+    .project-details p {
+      margin-bottom: 20px;
+    }
+
+    .project-details ul {
+      list-style: none;
+      margin-bottom: 20px;
+    }
+
+    .project-details ul li {
+      font-size: 1.1rem;
+      color: #333;
+      margin-bottom: 10px;
+      position: relative;
+      padding-left: 20px;
+    }
+
+    .project-details ul li::before {
+      content: '•';
+      position: absolute;
+      left: 0;
+      color: #3498db;
+      font-size: 1.5rem;
+      line-height: 1.2;
+    }
+
+    .image-gallery {
+      display: flex;
+      gap: 20px;
+      margin-bottom: 20px;
+      flex-wrap: wrap;
+    }
+
+    .image-gallery img {
+      max-width: 100%;
+      height: auto;
+      border-radius: 5px;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+      width: 350px;
+    }
+
+    .technologies {
+      font-size: 1rem;
+      color: #2c3e50;
+      font-weight: 600;
+    }
+
+    .technologies span {
+      background: #ecf0f1;
+      padding: 5px 10px;
+      border-radius: 5px;
+      margin-right: 10px;
+      font-size: 0.9rem;
+    }
+
+    /* Skills Section */
+    .skills-section {
+      background: #fff;
+      border-radius: 10px;
+      box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+      padding: 30px;
+      margin-bottom: 40px;
+    }
+
+    .skills-section h3 {
+      font-size: 1.5rem;
+      color: #2c3e50;
+      margin-bottom: 20px;
+    }
+
+    .skills-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+      gap: 15px;
+    }
+
+    .skills-grid div {
+      background: #ecf0f1;
+      padding: 10px;
+      border-radius: 5px;
+      text-align: center;
+      font-weight: 600;
+    }
+
+    /* Footer */
+    footer {
+      background: #2c3e50;
+      color: #fff;
+      padding: 20px 0;
+      text-align: center;
+    }
+
+    footer p {
+      font-size: 0.9rem;
+    }
+
+    footer a {
+      color: #e74c3c;
+      text-decoration: none;
+    }
+
+    footer a:hover {
+      text-decoration: underline;
+    }
+
+    @media (max-width: 768px) {
+      header .container {
+        flex-direction: column;
+        gap: 10px;
+      }
+
+      .image-gallery img {
+        width: 100%;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="container">
+      <h1>Faker Jedidi Portfolio</h1>
+      <nav>
+        <ul>
+          <li><a href="#project">Project</a></li>
+          <li><a href="#skills">Skills</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+
+  <div class="main-content">
+    <div class="container">
+      <div class="project-header" id="project">
+        <h2>Master Project: Automated QoS Data Processing System</h2>
+        <p>January 2025 - June 2025 | Final Internship at Business Intelligence for Telecommunication (BI4T)</p>
+      </div>
+
+      <div class="project-details">
+        <p>Developed a comprehensive system to automate the processing of Quality of Service (QoS) data for 2G, 3G, 4G, and 5G networks, significantly enhancing efficiency and reliability for telecom regulators and operators. The system transforms raw data into actionable insights through advanced dashboards, geospatial mapping, and automated reporting.</p>
+        <h3>Key Achievements</h3>
+        <ul>
+          <li>Designed and developed a Java/Spring Batch pipeline to process raw mobile network performance data from multi-format files (.csv, .xml, .data), reducing manual effort by 90%.</li>
+          <li>Architected a PostgreSQL/PostGIS database for storing and analyzing geospatial KPIs (e.g., latency, coverage), enabling spatial queries for infrastructure optimization.</li>
+          <li>Automated ETL tasks to calculate hourly, daily, and weekly KPIs, including critical metrics like Call Setup Success Rate (CSSR), Call Drop Rate (CDR), and Handover Success Rate (HOSuccess), providing real-time QoS dashboards to operators.</li>
+          <li>Implemented validation checks and error handling, achieving 99.5% system reliability, with detailed logging for transparency and troubleshooting.</li>
+        </ul>
+        <h3>Technical Details</h3>
+        <p><strong>KPI Calculation:</strong> The system calculates KPIs using standardized formulas, such as CSSR = (Successful Call Setups / Total Call Attempts) * 100 and CDR = (Dropped Calls / Total Call Attempts) * 100. It stores numerator and denominator values (e.g., n_cssr, d_cssr) for flexibility, handling non-calculable cases with attributes like isCalculable to ensure data integrity across diverse network data from vendors like Huawei and Ericsson.</p>
+        <p><strong>Interactive Dashboard:</strong> The dashboard offers real-time KPI displays with customizable views (by region, period, or cell), drill-down capabilities, and threshold alerts. It features circular gauges for CSSR (60%), CDR (0%), TauxDispo (100%), and HOSuccess (40%), alongside a trends graph to identify anomalies like a CSSR drop at 02:00, enhancing decision-making for network performance monitoring.</p>
+        <p><strong>Coverage Map:</strong> The geospatial coverage map visualizes KPIs like signal strength and data speeds using color-coded heatmaps, with layering options for different operators and network technologies (2G-5G). It supports zoom/pan functionality and point-and-click details, identifying coverage gaps for strategic planning and network expansion.</p>
+        <p><strong>Report Generation:</strong> The system generates customizable reports (daily, weekly, monthly) in PDF or CSV formats, incorporating visualizations and aggregated KPIs. Users can select specific regions and time periods, with the process leveraging pre-calculated data from the PostgreSQL database for efficiency, optimized by tables like table_valeurs_mois.</p>
+        <div class="image-gallery">
+          <img src="images/test1.png" alt="Interactive Dashboard">
+          <img src="images/coverage.png" alt="Coverage Map">
+          <img src="images/test.png" alt="Sample Report">
+        </div>
+        <div class="technologies">
+          Technologies: 
+          <span>Java</span>
+          <span>Spring Batch</span>
+          <span>PostgreSQL</span>
+          <span>PostGIS</span>
+          <span>Bash</span>
+          <span>Cron</span>
+        </div>
+      </div>
+
+      <div class="skills-section" id="skills">
+        <h3>Skills & Technologies</h3>
+        <div class="skills-grid">
+          <div>Java</div>
+          <div>Spring Boot</div>
+          <div>Spring Batch</div>
+          <div>PostgreSQL</div>
+          <div>PostGIS</div>
+          <div>Bash Scripting</div>
+          <div>Cron Jobs</div>
+          <div>ETL Processes</div>
+          <div>Geospatial Analysis</div>
+          <div>Dashboard Development</div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <footer id="contact">
+    <div class="container">
+      <p>© 2025 Faker Jedidi | <a href="mailto:fakerjedidi@gmail.com">Email Me</a> | <a href="https://linkedin.com/in/fakerjedidi">LinkedIn</a></p>
+    </div>
+  </footer>
+</body>
+</html>

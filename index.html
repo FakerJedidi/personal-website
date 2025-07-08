@@ -1,0 +1,567 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Faker Jedidi - Portfolio</title>
+
+    <!-- Third Party Plugins -->
+    <link rel="stylesheet" type="text/css" href="css/vendor.css">
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@900&family=Roboto:wght@400;700;900&family=Six+Caps&display=swap" rel="stylesheet">
+    <!-- custom style -->
+    <link rel="stylesheet" href="style.css">
+
+  </head>
+  <body data-bs-theme="dark">
+    
+    <div class="nav nav-overlay">
+      <div class="nav__content">
+        <ul class="nav__list">
+          <li class="nav__list-item active-nav"><a href="index.html" class="hover-target">Home</a></li>
+          <li class="nav__list-item"><a href="styles.html" class="hover-target">Styles</a></li>
+          <li class="nav__list-item"><a href="blog.html" class="hover-target">Blog</a></li>
+          <li class="nav__list-item"><a href="single-post.html" class="hover-target">Single Post</a></li>
+          <li class="nav__list-item"><a href="portfolio-masonry.html" class="hover-target">Portfolio</a></li>
+          <li class="nav__list-item"><a href="single-portfolio.html" class="hover-target">Single Portfolio</a></li>
+          <li class="nav__list-item"><a href="contact.html" class="hover-target">Contact me</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <nav id="navbar" class="position-absolute">
+			<input id="menu-toggle" type="checkbox" />
+			<label class="menu-btn" for="menu-toggle">
+			<span></span>
+			</label>
+		</nav>
+
+    <div class="container-fluid p-0">
+      <div class="row g-0">
+        <!-- Sidebar -->
+        <div class="col-lg-3 position-fixed z-1 h-100" data-aos="slide-right" data-aos-delay="200">
+          <div class="sidebar p-4 p-lg-5 vh-100 d-flex flex-column position-relative">
+            <a href="index.html" class="logo mb-0 text-decoration-none">Faker.</a>
+            <p class="bio mt-4 d-none d-lg-block" style="max-width: 200px;">
+           Throughout my academic and professional journey, I have led and contributed to a variety of impactful projects across software development, data engineering, and data science. My work demonstrates a strong ability to build full-stack applications, process and analyze complex data, and deliver intelligent solutions using modern technologies. </p>
+            <p style="max-width: 200px;"> Template by Jedidi <a href="https://templatesjungle.com/" target="_blank" class="text-decoration-none">Faker_jedidi</a></p>
+            
+            <div class="social-icons mt-auto mb-4 d-none d-lg-flex flex-column">
+              <a href="https://www.facebook.com/faker.jdidi.5" class="social-icon" aria-label="Facebook"><i class="fab fa-facebook-f"></i></a>
+              <a href="https://x.com/FakerJdidi1" class="social-icon" aria-label="Twitter"><i class="fab fa-twitter"></i></a>
+              <a href="https://www.instagram.com/jdidi_faker/" class="social-icon" aria-label="Instagram"><i class="fab fa-instagram"></i></a>
+              <a href="www.linkedin.com/in/faker-jedidi-1045a3228" class="social-icon" aria-label="LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+              <a href="#" class="social-icon" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+              <a href="https://github.com/FakerJedidi" class="social-icon" aria-label="Github"><i class="fab fa-github"></i></a>
+            </div>
+            
+            <div class="personal-info d-none d-lg-flex">
+              <p class="job-title mb-2">SOFTWARE DEVELOPER / DATA SCIENTIST</p>
+              <p class="location">NABEUL, TUNISIA</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-lg-9 offset-lg-3">
+          <div class="row">
+            
+            <!-- Main Content / data-aos="fade-up" --> 
+            <div id="intro" class="col-lg-8 position-relative d-flex flex-column align-items-center"> 
+              <div class="pt-4 pt-lg-5 px-4 px-lg-5 w-100 mt-5">
+                
+                <!--  slide-clip slide-in -->
+                <div class="swiper banner-slider slide-in mt-5 mt-lg-0 ">
+                  <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">INTRODUCTION</span>
+                        <h2 class="name mb-4 txt-fx slide-up">Faker Jedidi</h2>
+                        <p class="description mb-4">
+                            Hello! My name is Faker Jedidi, a passionate and detail-oriented Data Science graduate with a strong foundation in software development and data analysis. I hold a Master’s degree in Data Science and a Bachelor’s degree in Information Technology, and I have hands-on experience in building intelligent systems that solve real-world problems.
+                        </p>
+                        <a href="#" class="cta-link d-inline-block mb-5">Let's Talk.</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">Master’s Final Project – Data Science</span>
+                        <h2 class="name mb-4 txt-fx slide-up">BI4T Company – Tunis (2025)</h2>
+                        <p class="description mb-4">
+                          Designed and developed a Java/Spring Batch pipeline to automate the processing of multi-format files (.csv, .xml, .data) containing telecom network performance indicators (2G/3G/4G/5G), reducing manual effort by over 90%.
+                        </p>
+                        <a href="#" class="cta-link d-inline-block mb-5">View all Works.</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">Fantasy Premier League Points Prediction Project</span>
+                        <h2 class="name mb-4 txt-fx slide-up">Predection</h2>
+                        <p class="description mb-4">
+                          Developed a predictive model to estimate Fantasy Premier League (FPL) player points based on historical performance and upcoming match difficulty.
+
+Used Python, pandas, and scikit-learn for data analysis and linear regression modeling.
+
+Integrated machine learning algorithms to optimize prediction accuracy.
+
+Retrieved and processed data via the official FPL API.
+
+Visualized results and evaluated model performance using metrics like RMSE and R².
+                        </p>
+                        <a href="#" class="cta-link d-inline-block mb-5">Let's Talk.</a>
+                      </div>
+                    </div>
+                    <div class="swiper-slide">
+                      <div class="banner-content d-flex flex-column">
+                        <span class="introduction mb-3 d-block">Mobile Time-Tracking App – Internship at Aurax</span>
+                        <h2 class="name mb-4 txt-fx slide-up">Aurax Startup – Ghazela (2023)</h2>
+                        <p class="description mb-4">
+                          Built a mobile SAAS time-tracking application.
+
+Backend developed with Node.js, mobile front-end with React Native, and Firebase for real-time data and authentication.
+                        </p>
+                        <a href="#" class="cta-link d-inline-block mb-5">About me.</a>
+                      </div>
+                    </div>
+                    
+                  </div>
+                </div>
+                
+              </div>
+              
+              <nav class="section-nav swiper banner-nav-slider pt-3 pt-lg-4 px-4 px-lg-5 w-100" data-aos="fade-up" data-aos-delay="600" data-aos-anchor-placement="top-bottom">
+                <ul class="swiper-wrapper">
+                  <li class="swiper-slide"><span>01</span> INTRO</li>
+                  <li class="swiper-slide"><span>02</span> EXPERIENCE</li>
+                  <li class="swiper-slide"><span>03</span> EXPERTISE</li>
+                  <li class="swiper-slide"><span>04</span> WHY ME?</li>
+                </ul>
+              </nav>
+              <div class="swiper image-slider" data-aos="fade-up" data-aos-delay="1000" >
+                <div class="swiper-wrapper">
+                  <div class="swiper-slide">
+                    <img
+                        class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                        src="images/backgr.jpg"
+                        alt="Kitchen interior"
+                      >
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                        class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                        src="images/backgr1.jpg"
+                        alt="Kitchen interior"
+                      >
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                        class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                        src="images/banner-image-3.jpg"
+                        alt="Kitchen interior"
+                      >
+                  </div>
+                  <div class="swiper-slide">
+                    <img
+                        class="hero-image position-absolute top-0 end-0 img-fluid mb-5 opacity-25 vh-100"
+                        src="images/banner-image-4.jpg"
+                        alt="Kitchen interior"
+                      >
+                  </div>
+                </div>
+              </div>
+            </div>
+            
+            <!-- Skills Section -->
+            <div class="col-lg-4">
+              <div class="p-4 p-lg-5 vh-100">
+                <div class="skill" data-aos="fade-up" data-aos-delay="200">
+                  <span class="skill-number d-block">01</span>
+                  <h3>DATA SCIENTIST</h3>
+                  <p>Deliver intelligent solutions using modern technologies.</p>
+                </div>
+                
+                <div class="skill" data-aos="fade-up" data-aos-delay="400">
+                  <span class="skill-number d-block">02</span>
+                  <h3>SOFTWARE DEVELOPER</h3>
+                  <p>I have hands-on experience in building intelligent systems that solve real-world problems.</p>
+                </div>
+                
+                <div class="skill" data-aos="fade-up" data-aos-delay="600">
+                  <span class="skill-number d-block">03</span>
+                  <h3>DATA Engineering</h3>
+                  <p>My recent professional experience helped me to work and build saftware development and data engineering solutions.</p>
+                </div>
+                
+                <!-- Mobile-only content -->
+                <div class="d-lg-none mt-5">
+                  <hr class="sidebar-divider">
+                  <p class="job-title mb-2">UI/UX DESIGNER / ART DIRECTOR</p>
+                  <p class="location mb-4">MYKOLAIV, UKRAINE</p>
+                  <a href="#" class="cta-button d-block text-center">VIEW ALL WORKS</a>
+                </div>
+              </div>
+            </div>
+            
+            <!-- CTA Button (Desktop) -->
+            <div class="col-lg-3 d-none d-lg-block position-fixed bottom-0 end-0 p-0" style="z-index: 8;">
+              <!-- <a href="#" class="cta-button d-block">VIEW ALL WORKS</a> -->
+              <button class="btn-special w-100" data-aos="fade-up" data-aos-delay="800" data-aos-anchor-placement="top-bottom">
+                  <span class="text-container">
+                      <span class="original-text">HIRE ME</span>
+                      <span class="hover-text">HIRE ME</span>
+                  </span>
+              </button>
+            </div>
+
+            <section id="about" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+            <div class="row d-flex flex-wrap" data-aos="fade-up">
+              <div class="col-lg-6 pb-5">
+                <span class="introduction mb-3 d-block">BIODATA</span>
+                <h2 class="name mb-4 txt-fx slide-up text-uppercase">Education</h2>
+                <div class="data-info py-3" data-aos="fade-up">
+                  <span class="meta-date">2016 - 2020</span>
+                  <h3 class="info-title">Bachelor’s degree in information science</h3>
+                  <p>El ahd Jadid Bouargoub secondary high school</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="100">
+                  <span class="meta-date">2020 - 2023</span>
+                  <h3 class="info-title">Applied Bachelor’s in Computer Technology
+ Development of IT Information Systems </h3>
+                  <p> Higher Institute of Technological Studies of Kélibia</p>
+                </div>
+                 <div class="data-info" data-aos="fade-up" data-aos-delay="100">
+                  <span class="meta-date">2023 - 2025</span>
+                  <h3 class="info-title"> Master in Data Science </h3>
+                  <p> Higher Institute of Applied Languages and Computer Science of Beja</p>
+                </div>
+              </div>
+              <div class="col-lg-6 pb-5">
+                <h2 class="name mb-4 txt-fx slide-up text-uppercase">Experiences</h2>
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                  <span class="meta-date">  2025 - present</span>
+                  <h3 class="info-title">Internship within the company BI4T</h3>
+                  <p>Master’s Project
+ Designed and developed a Java/Spring Batch pipeline to process
+ raw data of 2G/3G/4G/5G network performance coming from
+ multi-format files (.csv, .xml, .data), reducing effort
+ manual of 90%.</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="300">
+                  <span class="meta-date">2023</span>
+                  <h3 class="info-title">Internship at the start-up Aurax</h3>
+                  <p>Development of a SAAS mobile scoring application
+ Technologies: Nodejs, react native, firebase.</p>
+                </div>
+              </div>
+            </div>
+            <div class="row d-flex flex-wrap" data-aos="fade-up">
+              <div class="col-lg-6 pb-5">
+                <h2 class="name mb-4 txt-fx slide-up text-uppercase">Academic projects</h2>
+                <div class="data-info py-3" data-aos="fade-up">
+                  <span class="meta-date">2025</span>
+                  <h3 class="info-title">Fantasy Premier League FPL point prediction project</h3>
+                  <p>Development of a predictive model to estimate the points of the
+ players based on their past performance and difficulties
+ upcoming matches.
+ Use of Python, pandas, and scikit-learn for the analysis of
+ data and the creation of a linear regression model.
+ Integration of machine learning algorithms to optimize the
+ accuracy of predictions.</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="100">
+                  <span class="meta-date">2023</span>
+                  <h3 class="info-title"> Pharmacy searchOur web application objectives</h3>
+                  <p>Send the client back to the pharmacy closest to him and which at the same
+ time proceeds with the treatments sought with the possibility of the reserve.</p>
+                </div>
+              </div>
+              <div class="col-lg-6 pb-5">
+                <h2 class="name mb-4 txt-fx slide-up text-uppercase">References</h2>
+                <div class="data-info py-3" data-aos="fade-up" data-aos-delay="200">
+                  <span class="meta-date"></span>
+                  <h3 class="info-title">Kaggle</h3>
+                                   
+                  <p>Kaggle is a platform for data science and machine learning, offering a community, competitions, datasets, and learning resources.</p>
+                </div>
+                <div class="data-info" data-aos="fade-up" data-aos-delay="300">
+                  <span class="meta-date">2004 - 2006</span>
+                  <h3 class="info-title">Dr. David Howard</h3>
+                  <p>iacentem substantiales um se sed esse haec Possit facis qui a a a patriam.</p>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="experience" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+            <div class="row mb-5">
+              <div class="col-lg-6" data-aos="fade-up">
+                <span class="introduction mb-3 d-block">introduction</span>
+                <h2 class="name mb-4 txt-fx slide-up text-uppercase">Experienced Creative mind</h2>
+                <p>A resourceful and imaginative thinker with hands-on experience turning innovative ideas into real-world digital solutions.</p>
+              </div>
+            </div>
+            <div class="row">
+              <div class="col-lg-6">
+                <div class="info-element py-4" data-aos="fade-up">
+                  <table class="table">
+                    <tbody>
+                      <tr>
+                        <th>Age</th>
+                        <td>25</td>
+                      </tr>
+                      <tr>
+                        <th>Residence</th>
+                        <td>Tunisia</td>
+                      </tr>
+                      <tr>
+                        <th>Address</th>
+                        <td>Bou Argoub Nabeul, 8040</td>
+                      </tr>
+                      <tr>
+                        <th>E-mail</th>
+                        <td><a href="#">fakerjedidi@gmail.com</a></td>
+                      </tr>
+                      <tr class="no-border-bottom">
+                        <th>Phone</th>
+                        <td>+216 50 091 273</td>
+                      </tr>
+                    </tbody>
+                  </table>
+                </div>
+              </div>
+              <div class="col-lg-6">
+                <div class="skill-chart py-4" data-aos="fade-up">
+                  <ul class="skill-chart-list list-unstyled">
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">Python</span>
+                        <span class="percentage">90%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">Java</span>
+                        <span class="percentage">75%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">R</span>
+                        <span class="percentage">80%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage eighty-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">Apache Spark</span>
+                        <span class="percentage">70%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage seventy-percent"></div>
+                      </div>
+                    </li>
+                    <li>
+                      <div class="chart-header d-flex justify-content-between">
+                        <span class="skill-title">Power BI</span>
+                        <span class="percentage">95%</span>
+                      </div>
+                      <div class="chart-border">
+                        <div class="chart-percentage ninety-five-percent"></div>
+                      </div>
+                    </li>
+                  </ul>
+                </div>
+              </div>
+            </div>
+          </section>
+
+          <section id="portfolio" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+            <div class="section-header my-5" data-aos="fade-up">
+              <div class="row g-5">
+                <div class="col-lg-6">
+                  <span class="introduction mb-3 d-block">some of my recent works</span>
+                  <h2 class="name mb-4 txt-fx slide-up text-uppercase">Portfolio</h2>
+                </div>
+                <div class="col-lg-4" data-aos="fade-up">
+        <p><span class="master-project">Master Project</span>, Final Internship
+          Business Intelligence For Telecommunication Company.</p>
+        <a href="portfolio-masonry.html" class="btn btn-dark px-5 py-4">View All</a>
+      </div>
+              </div>
+            </div>
+            <div class="swiper portfolio-Swiper portfolio-content py-4" data-aos="fade-up">
+              <div class="swiper-wrapper">
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio.html" title="portfolio details"><img src="images/fpl_points.jpg"
+                        alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title">FPL Game Prediction Points</div>
+                   <!--   <a href="#" class="image-format bg-orange">svg</a>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio1.html" title="portfolio details"><img src="images/diabbb.png"
+                        alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title">Diabetes Prediction Project</div>
+                     <!--<a href="#" class="image-format bg-orange">svg</a>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio2.html" title="portfolio details"><img src="images/housepred.jpg "
+                        alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title">Tunisian House Prices Prediction</div>
+                    <!-- <a href="#" class="image-format bg-blue">psd</a>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio3.html" title="portfolio details"><img src="images/atten.png"
+                        alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title">Mobile Clock Application for Aurax</div>
+                   <!--  <a href="#" class="image-format bg-blue">png</a>-->
+                  </div>
+                </div>
+                <div class="swiper-slide">
+                  <div class="image-holder">
+                    <a href="single-portfolio.html" title="portfolio details"><img src="images/port-item2.jpg"
+                        alt="portfolio" class="img-fluid"></a>
+                  </div>
+                  <div class="caption d-flex justify-content-between align-items-center">
+                    <div class="title"></div>
+                    <a href="#" class="image-format">svg</a>
+                  </div>
+                </div>
+              </div>
+              <div class="swiper-pagination mt-5"></div>
+            </div>
+          </section>
+
+          <section id="contact" class="pt-4 pt-lg-5 px-4 px-lg-5 my-5 py-5">
+            <div class="container">
+              <div class="row mb-5">
+                <div class="col-lg-6" data-aos="fade-up">
+                  <span class="introduction mb-3 d-block">Personal Info</span>
+                  <h2 class="name mb-4 txt-fx slide-up text-uppercase">Contact Me</h2>
+                  <p></p>
+                </div>
+              </div>
+              <div class="row d-flex g-5">
+                <div class="col-lg-7" data-aos="fade-up">
+                  <h3>Frequently Asked Questions</h3>
+                  <div class="accordion" id="accordionExample2">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse1" aria-expanded="true"
+                          aria-controls="accordion-collapse1">
+                          What experience do I have in my field?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse1" class="accordion-collapse collapse show"
+                        aria-labelledby="headingOne" data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                         I have gained valuable experience in the telecommunications and software development industry through my academic projects and internships. 
+                         Over the past three years in the program at the Institut Supérieur des Études Technologiques de Kélibia, 
+                         I developed a mobile clock application for Aurax, 
+                         focusing on managing employee attendance with features like license activation, PIN authentication,
+                          and pointage management
+                           I worked on automated systems for processing QoS data from telecom networks (2G, 3G, 4G, and 5G), 
+                           involving data extraction, transformation, and KPI calculations, which honed my skills in batch processing and data engineering. 
+                           while my work with QoS Tracker improved my ability to optimize network performance metrics. 
+                           These experiences have equipped me with a strong foundation in software development, data analysis, and telecom solutions.
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse2" aria-expanded="false"
+                          aria-controls="accordion-collapse2">
+                          How many clients do you typically work with at once?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse2" class="accordion-collapse collapse" aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                          
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingThree">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                          data-bs-target="#accordion-collapse3" aria-expanded="false"
+                          aria-controls="accordion-collapse3">
+                          Do you have the capacity to take on this project right now?
+                        </button>
+                      </h2>
+                      <div id="accordion-collapse3" class="accordion-collapse collapse" aria-labelledby="headingThree"
+                        data-bs-parent="#accordionExample2">
+                        <div class="accordion-body">
+                                                </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="col-lg-5">
+                  <div class="right-content" data-aos="fade-up">
+
+                    <div class="element-header align-right">
+                      <h3>Feel free to send me a message or any word of appreciation.</h3>
+                    </div>
+
+                    <div class="contact-form py-4">
+                      <form id="form" class="form-group">
+                        <div class="pb-2"><input type="text" name="name" placeholder="Your Full Name"
+                            class="form-control">
+                        </div>
+                        <div class="pb-2"><input type="text" name="address" placeholder="Your Email Address"
+                            class="form-control"></div>
+                        <div class="pb-2"><textarea placeholder="Your Message" rows="6" class="form-control"></textarea>
+                        </div>
+                        <button type="submit" name="submit" class="btn btn-dark w-100 btn-rounded">Submit</button>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+            </div>
+          </section>
+          
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script src="js/plugins.js"></script>
+    <script src="js/script.js"></script>
+
+  </body>
+</html>
