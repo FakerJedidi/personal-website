@@ -1,0 +1,91 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Faker Jedidi Portfolio</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 font-sans">
+    <header class="bg-blue-900 text-white p-4">
+        <div class="container mx-auto flex justify-between items-center">
+            <h1 class="text-2xl font-bold">Faker Jedidi Portfolio</h1>
+            <nav>
+                <ul class="flex space-x-4">
+                    <li><a href="#project" class="hover:underline">Project</a></li>
+                    <li><a href="#skills" class="hover:underline">Skills</a></li>
+                    <li><a href="#contact" class="hover:underline">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main class="container mx-auto p-6">
+        <section id="project" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">F1 Race Winner Prediction Project</h2>
+            <p class="text-lg italic">Individual Project</p>
+            <div class="mt-4">
+                <p class="text-gray-700 mb-4">
+                    Developed a Python-based system to predict Formula 1 race winners for the 2025 season using historical race data and machine learning. The project leverages the FastF1 library to access race data and the OpenWeatherMap API for weather conditions, predicting average lap times for drivers and determining the likely race winner. The system includes interactive features for users to select races and visualize predictions through scatter plots and feature importance charts.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <a href="https://www.kaggle.com/code/fakerjdidi/f1-predection-2025-v2/edit" class="text-blue-600 underline hover:text-blue-800" target="_blank">View the project on Kaggle</a>
+                </p>
+                
+                <h3 class="text-xl font-semibold mt-6 mb-2">Key Achievements</h3>
+                <ul class="list-disc pl-6 mb-4">
+                    <li>Designed a data pipeline to process 2024 F1 race data from FastF1, handling missing values and integrating weather data for accurate predictions.</li>
+                    <li>Implemented a Gradient Boosting Regressor to predict average lap times, achieving a mean absolute error (MAE) of approximately 0.07 seconds, with dynamic race selection for 2025 races.</li>
+                    <li>Created interactive visualizations using Matplotlib, including scatter plots of clean air race pace vs. predicted lap times and feature importance plots to highlight key predictors like qualifying time and team performance.</li>
+                    <li>Developed an intuitive interface allowing users to input race names (e.g., Bahrain, Monaco) and view predicted podiums with full driver names and estimated total race times.</li>
+                </ul>
+
+                <h3 class="text-xl font-semibold mt-6 mb-2">Technical Details</h3>
+                <p class="text-gray-700 mb-4">
+                    <strong>Data Processing:</strong> The pipeline retrieves 2024 race data (e.g., lap times, sector times) from the FastF1 library and processes it with Pandas. Features include qualifying times, clean air race pace, team performance scores, weather conditions (rain probability, temperature), and track-specific metrics like average position change. Missing values are handled using median imputation with Scikit-learn’s SimpleImputer.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Predictive Model:</strong> A Gradient Boosting Regressor (n_estimators=200, learning_rate=0.1, max_depth=4) predicts average lap times based on nine features, including qualifying time, team performance, and weather factors. The model is trained on 2024 race data with a 70-30 train-test split (random_state=38), achieving high accuracy (MAE ~0.07 seconds). Total race times are estimated by multiplying predicted lap times by the number of laps and adding pit stop times (assumed 44 seconds for two stops).
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>Visualization:</strong> Interactive plots include scatter plots of clean air race pace vs. predicted lap times (annotated with driver names) and horizontal bar charts showing feature importance. These visualizations help users understand the model’s decision-making process and the impact of features like qualifying time and weather.
+                </p>
+                <p class="text-gray-700 mb-4">
+                    <strong>User Interface:</strong> The system prompts users to select a race (e.g., Bahrain, Monaco) and uses predefined race data (latitude, longitude, lap counts) to fetch weather data and make predictions. Outputs include a ranked list of drivers, predicted podiums, and estimated total race times in minutes.
+                </p>
+
+                <div class="mt-4">
+                    <p><strong>Technologies:</strong></p>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Python</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Pandas</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">NumPy</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Matplotlib</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Scikit-learn</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">FastF1</span>
+                    <span class="inline-block bg-blue-200 text-blue-800 text-sm font-semibold mr-2 px-2.5 py-0.5 rounded">Requests</span>
+                </div>
+            </div>
+        </section>
+
+        <section id="skills" class="mb-12">
+            <h2 class="text-3xl font-bold mb-4">Skills & Technologies</h2>
+            <ul class="grid grid-cols-2 md:grid-cols-3 gap-4">
+                <li class="bg-gray-200 p-2 rounded">Python</li>
+                <li class="bg-gray-200 p-2 rounded">Pandas</li>
+                <li class="bg-gray-200 p-2 rounded">NumPy</li>
+                <li class="bg-gray-200 p-2 rounded">Matplotlib</li>
+                <li class="bg-gray-200 p-2 rounded">Scikit-learn</li>
+                <li class="bg-gray-200 p-2 rounded">FastF1</li>
+                <li class="bg-gray-200 p-2 rounded">Requests</li>
+                <li class="bg-gray-200 p-2 rounded">Data Analysis</li>
+                <li class="bg-gray-200 p-2 rounded">Machine Learning</li>
+            </ul>
+        </section>
+    </main>
+
+    <footer id="contact" class="bg-blue-900 text-white p-4 text-center">
+        <p>© 2025 Faker Jedidi | <a href="mailto:fakerjedidi@gmail.com" class="underline">Email Me</a> | <a href="https://linkedin.com/in/fakerjedidi" class="underline">LinkedIn</a></p>
+    </footer>
+</body>
+</html>
